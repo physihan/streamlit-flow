@@ -54,7 +54,6 @@ with col2:
 
 st.markdown("## 请输入内容：")
 
-
 def get_api_key():
     input_text = st.text_input(label="OpenAI API Key ",
                                placeholder="Ex: sk-2twmA8tfCb8un4...",
@@ -62,9 +61,8 @@ def get_api_key():
     return input_text
 
 
-# openai_api_key = get_api_key()
-openai_api_key = "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"
 
+openai_api_key = get_api_key()
 col1, col2 = st.columns(2)
 graph_type = ""
 with col1:
